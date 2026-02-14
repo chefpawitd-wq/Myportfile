@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Portfolio | ภวิศวร์ ธีวราวรกฤต</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a; /* Deep Navy */
+            --accent: #3b82f6;  /* Bright Blue */
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Kanit', sans-serif;
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        /* --- Cards Layout --- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* --- Skills --- */
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            background: #eff6ff;
+            color: var(--accent);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* --- Projects --- */
+        .project-card {
+            border-left: 5px solid var(--accent);
+        }
+
+        .project-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .btn-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* --- Contact --- */
+        .contact-box {
+            background: var(--primary);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .contact-box h2 { color: white; }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .contact-item:hover { color: white; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="hero">
+            <img src="me.jpg.jpg" alt="ภวิศวร์ ธีวราวรกฤต" class="profile-img">
+            <h1>ภวิศวร์ ธีวราวรกฤต (Chef)</h1>
+            <p>นักเรียนมัธยมศึกษาปีที่ 3 | Aspiring Frontend Developer & UX/UI Designer</p>
+        </header>
+
+        <section id="about">
+            <h2 class="section-title">เกี่ยวกับผม</h2>
+            <div class="card">
+                <p>ผมเป็นนักเรียนที่มีความสนใจอย่างแรงกล้าในด้านเทคโนโลยีและงานดิจิทัล มีพื้นฐานการเขียน <b>HTML, CSS และ JavaScript</b> ผมชอบการออกแบบเว็บไซต์ให้ใช้งานง่ายและสวยงาม ปัจจุบันกำลังมองหาโอกาสในการฝึกงานเพื่อนำทักษะที่มีมาปรับใช้ในสภาพแวดล้อมจริงและพัฒนาตัวเองให้เก่งขึ้นครับ</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">ทักษะและความสามารถ</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list" style="margin-top:15px;">
+                        <li>HTML5</li>
+                        <li>CSS3 (Layout & Design)</li>
+                        <li>Basic JavaScript</li>
+                        <li>UX/UI Design</li>
+                        <li>Google Docs / Office</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Soft Skills</h3>
+                    <ul class="skills-list" style="margin-top:15px;">
+                        <li>การเรียนรู้ที่รวดเร็ว (Fast Learner)</li>
+                        <li>ความรับผิดชอบต่องาน</li>
+                        <li>การแก้ปัญหาอย่างเป็นระบบ</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">ผลงานของผม</h2>
+            <div class="card project-card">
+                <h4>My First Portfolio Website</h4>
+                <p>เว็บไซต์แนะนำตัวเองฉบับแรกที่เขียนด้วย HTML, CSS และ JavaScript เพื่อฝึกฝนการจัดวางโครงสร้างเว็บและการทำ Responsive Design</p>
+                <a href="#" class="btn-link">View Project Details →</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-box">
+                <h2>สนใจร่วมงานหรือติดต่อสอบถาม</h2>
+                <p style="opacity: 0.8; margin-bottom: 20px;">พร้อมสำหรับการฝึกงานและการเรียนรู้ใหม่ๆ เสมอครับ</p>
+                <div class="contact-info">
+                    <span class="contact-item">📞 089-305-4998</span>
+                    <a href="#" class="contact-item">👤 Facebook: Phawisaw Theewaraworakrit</a>
+                    <a href="#" class="contact-item">📸 Instagram: Phawisaw</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2024 Phawisaw Theewaraworakrit. Crafted with passion.
+        </footer>
+    </div>
+
+</body>
+</html>
